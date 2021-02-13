@@ -1,0 +1,33 @@
+<div class="content">
+    <div class="row d-flex justify-content-center mt-2">
+        <div class="col-md-10 col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Lista de usuarios</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nombre de usuario</th>
+                                    <th>Fecha de nacimiento</th>
+                                    <th>Edad</th>
+                                    <th>Dirección</th>
+                                </tr>
+                            </thead>
+                            <tbody *ngFor="let item of datos">
+                                <tr>
+                                    <td>{{item.name}}</td>
+                                    <td>{{item.fecha_nacimiento}}</td>
+                                    <td>8</td>
+                                    <td>{{item.domicilio}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
